@@ -6,7 +6,7 @@ export default function CartScreen() {
     <View>
       <Text>Cart</Text>
       <Link href="/">
-        <Button title="Go to Home" />
+        <Text>Go to Home</Text>
       </Link>
     </View>
   );

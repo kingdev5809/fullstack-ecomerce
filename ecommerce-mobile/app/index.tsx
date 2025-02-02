@@ -1,15 +1,12 @@
-import { Link } from "expo-router";
-import { StatusBar } from "expo-status-bar";
-import { Button, Text, View } from "react-native";
+import { FlatList } from "react-native";
+import prodcts from "@/assets/products.json";
+import ProductCard from "@/components/ProductListItem";
 
 export default function HomeScreen() {
   return (
-    <View>
-      <Text>The Home Screen</Text>
-      <Link href="/cart">
-        <Button title="Go to Cart" />
-      </Link>
-      {/* <StatusBar style="dark" /> */}
-    </View>
+    <FlatList
+      data={prodcts}
+      renderItem={({ item }) => <ProductCard product={item} />}
+    />
   );
 }
