@@ -1,4 +1,5 @@
-import { Text } from "react-native";
+import { Text, View } from "react-native";
+import { Button, ButtonText } from "./ui";
 
 interface Product {
   id: number;
@@ -11,6 +12,13 @@ interface Product {
 interface ProductCardProps {
   product: Product;
 }
-export default function ProductCard({ product }: ProductCardProps) {
-  return <Text>{product.name}</Text>;
+export function ProductCard({ product }: ProductCardProps) {
+  return (
+    <View>
+      <Text>{product.name}</Text>
+      <Button variant="outline">
+        <ButtonText>Buy</ButtonText>
+      </Button>
+    </View>
+  );
 }

@@ -1,6 +1,6 @@
 import { FlatList } from "react-native";
 import prodcts from "@/assets/products.json";
-import ProductCard from "@/components/ProductListItem";
+import { ProductCard } from "@/components";
 
 export default function HomeScreen() {
   return (
