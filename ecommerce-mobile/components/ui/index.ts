@@ -5,3 +5,4 @@ export * from "./text";
 export * from "./vstack";
 export * from "./heading";
 export * from "./box";
+export * from "./hstack";
